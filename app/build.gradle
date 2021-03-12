@@ -3,6 +3,7 @@ plugins {
     id 'kotlin-android'
     id 'kotlin-kapt'
     id 'kotlin-android-extensions'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -52,4 +53,18 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
+    // billing
+    implementation "com.android.billingclient:billing-ktx:$billing_version"
+
+    implementation platform('com.google.firebase:firebase-bom:26.2.0')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+
+    // ViewModel and LiveData extensions.
+    implementation "android.arch.lifecycle:extensions:$archLifecycleVersion"
+
+    // Java8 support for Lifecycles.
+    implementation "android.arch.lifecycle:common-java8:$archLifecycleVersion"
+
+    // debugImplementation because LeakCanary should only run in debug builds.
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.0-beta-2'
 }
