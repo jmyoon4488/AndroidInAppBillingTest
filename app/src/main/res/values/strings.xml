@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">BillingTest</string>
+    <string name="refresh_list">새로고침</string>
+
+    <string name="billing_purchased_product">단일 상품 구매</string>
+    <string name="billing_subscribe_product">구독 상품 구매</string>
+    <string name="billing_already_purchased_list">구매한 상품 목록</string>
+
+
+    <string name="billing_buy_one_item">단품 구매</string>
+    <string name="billing_buy_subscripbe">구독 구매</string>
+    <string name="billing_cancel_subscripbe">구독 취소</string>
+    <string name="billing_recover_subscripbe">구독 복원</string>
+    <string name="billing_product_list">상품 목록</string>
 </resources>
